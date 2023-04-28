@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HepatitisC Data Analysis</title>
+    <link rel="stylesheet" href="../static/css/inputs.css">
+</head>
+<body>
+    <div id="bg"></div>
+    <div class="container">
+        <div class="title"> Analysis HepatitisC Data</div> 
+        <div class="content">
+            <form action="{{ url_for('hepatitisC') }}" method="post">
+                <div class="data-details">
+                    <div class="input-field">
+                        <span class="details">Age</span>
+                        <input type="number" name="Age"  required>
+                    </div>
+
+                    <div class="input-field">
+                        <span class="details">Sex</span>
+                        <input type="number" name="Sex"  required>
+                    </div>
+
+                    <div class="input-field">
+                        <span class="details">Alb</span>
+                        <input type="number" name="Alb" step="any"  required>
+                    </div>
+
+                    <div class="input-field">
+                        <span class="details">Alp</span>
+                        <input type="number"name="Alp" step="any"  required>
+                    </div>
+                    <div class="input-field">
+                        <span class="details">Alt</span>
+                        <input type="number" name="Alt" step="any"  required>
+                    </div>
+
+                    <div class="input-field">
+                        <span class="details">Ast</span>
+                        <input type="number" name="Ast" step="any"  required>
+                    </div>
+
+                    <div class="input-field">
+                        <span class="details">Bil</span>
+                        <input type="number" name="Bil" step="any"  required>
+                    </div>
+                    <div class="input-field">
+                        <span class="details">Che</span>
+                        <input type="number" name="Che" step="any"  required>
+                    </div>
+                    <div class="input-field">
+                        <span class="details">Chol</span>
+                        <input type="number" name="Chol" step="any"  required>
+                    </div>
+                    <div class="input-field">
+                        <span class="details">Crea</span>
+                        <input type="number" name="Crea" step="any"  required>
+                    </div>
+                    <div class="input-field">
+                        <span class="details">Ggt</span>
+                        <input type="number" name="Ggt" step="any"  required>
+                    </div>
+                    <div class="input-field">
+                        <span class="details">Prot</span>
+                        <input type="number" name="Prot" step="any"  required>
+                    </div>
+                </div>
+                <div class="button">
+                    <input type="submit" value="predict" >
+                </div>  
+            </form>
+        </div>
+    </div>
+</body>
+</html>

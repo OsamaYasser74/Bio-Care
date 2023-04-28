@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" href="/static/css/result.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+  
+    <body>
+      <div id="bg"></div>
+      <div class="container">
+        <div class="title">PREDICTION</div>
+        <p style="color:rgb(255, 0, 0);font-size:20;text-align: center;"><b>Results for Prediction</b></p>
+        <div class="results" style="text-align: center;">
+          {% if my_prediction == 0%}
+          <h2 style="color:green;">Negative</h2>
+          {% elif my_prediction == 2%}
+          <h2 style="color:blue;">Prediabetes</h2>
+          {% elif my_prediction == 1%}
+          <h2 style="color:red;">Positive</h2>
+          {% endif %}
+        </div>
+      </div>
+
+    </body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diabetes Data Analysis</title>
+    <link rel="stylesheet" href="../static/css/inputs.css">
+</head>
+<body>
+    <div id="bg"></div>
+    <div class="container">
+        <div class="title"> Analysis Diabetes Data</div>
+        <div class="content">
+            <form action="{{url_for('diabetes')}}" method="post">
+                <div class="data-details">
+                    <div class="input-field">
+                        <span class="details">Gender</span>
+                        <input type="number" name="Gender" id="1"  required>
+                    </div>
+
+                    <div class="input-field">
+                        <span class="details">Age</span>
+                        <input type="number" name="Age" id="2"  required>
+                    </div>
+
+                    <div class="input-field">
+                        <span class="details">Urea</span>
+                        <input type="number" name="Urea" id="3" step="any" required>
+                    </div>
+                    <div class="input-field">
+                        <span class="details">Cr</span>
+                        <input type="number" name="Cr" id="4" required>
+                    </div>
+                    <div class="input-field">
+                        <span class="details">HbA1c</span>
+                        <input type="number" name="HbA1c" id="5" step="any" required>
+                    </div>
+                    <div class="input-field">
+                        <span class="details">Chol</span>
+                        <input type="number" name="Chol" id="6" step="any" required>
+                    </div>
+                    <div class="input-field">
+                        <span class="details">Tg</span>
+                        <input type="number" name="Tg" id="7" step="any" required>
+                    </div>
+                    <div class="input-field">
+                        <span class="details">Hdl</span>
+                        <input type="number" name="Hdl" id="8" step="any" required>
+                    </div>
+                    <div class="input-field">
+                        <span class="details">Ldl</span>
+                        <input type="number" name="Ldl" id="9" step="any" required>
+                    </div>
+                    <div class="input-field">
+                        <span class="details">Vldl</span>
+                        <input type="number" name="Vldl" id="10" step="any" required>
+                    </div>
+                    <div class="input-field">
+                        <span class="details">Bmi</span>
+                        <input type="number" name="Bmi" id="11" step="any" required>
+                    </div>
+                </div>
+                <div class="button">
+                    <input type="submit" value="predict" >
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,254 @@
+:root{
+    --fontcolor:#43b9dc;
+    --backgroundcolor:#34d3b4;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Slab', serif;
+    box-sizing: border-box;
+    transition: all .2s linear;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+html{
+    font-size: 65%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 2rem 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background:white;
+    box-shadow: 0 1rem 1rem rgb(0, 0, 0, .1);
+    z-index: 10000000;
+}
+header #logo{
+    font-size: 3rem;
+    color: black;
+}
+header #logo img{
+    width: 40px;
+    height: 40px;
+}
+header #logo span{
+    color: var(--fontcolor);
+}
+header .navbar a{
+    font-size: 1.5rem;
+    color: var(--fontcolor);
+    margin-left: 1.5rem;
+}
+header #menu_bars{
+    font-size: 2rem;
+    color: var(--fontcolor);
+    display: none;
+}
+header .navbar.active{
+    left: 0;
+    transition: .5s;
+}
+
+.container img{
+    background: url(background.jpg); 
+    width: 100%;
+    padding-top: 8rem;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    z-index: -99;
+}
+.container .main-text{
+    width: 50%;
+    position: absolute;
+    top:45%;
+    padding: 0 2rem;
+    text-align: center;
+}
+.container .main-text h3{
+    font-size: 3rem;
+    color: #3798b6;
+    padding-bottom: 1.5rem;
+    display: inline-block;
+}
+.container .main-text h2{
+    font-size: 4rem;
+    color: #EFF5F9;
+    padding-bottom: 1.5rem;
+}
+
+.about-us{
+    height: 100vh;
+    width: 100%;
+    padding: 90px 0;
+    background: white;
+}
+.pic{
+    height: auto;
+    width:  30%;
+    border-radius: 10px;
+}
+.about{
+    width: 1130px;
+    max-width: 85%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.text{
+    width: 540px;
+}
+.text h2{
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    border-bottom: 3px solid gray;
+    display: inline-block;
+    color: #43b9dc;
+    text-transform: uppercase;
+}
+.text h4{
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: #092C47;
+}
+.text p{
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: 1px;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.disease-section{
+    padding: 2rem 7%;
+    background: linear-gradient(#97d6de, #4c8796cc);
+    min-height: 50vh;
+}
+#disease{
+    color: white;
+    font-size: 30px;
+    padding: 2rem 0;
+    text-align: center;
+}
+.inner-disease-section{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    text-align: center;
+}
+.disease-box{
+    flex: 1 1 200px;
+    padding: 5rem 0;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, .1);
+}
+.disease-box i{
+    color: white;
+    font-size: 4rem;
+    padding: .5rem 0;
+}
+.disease-box h2{
+    color: #144e7a;
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+.disease-box p{
+    color: white;
+    font-size: 1.5rem;
+    padding: 0 1rem;
+    text-align: left;
+}
+
+.ourteam-section{
+    padding: 10rem;
+}
+.ourteam-section h2{
+    padding: 2rem;
+    font-size: 3rem;
+    text-align: center;
+}
+.ourteam-section h2 span{
+    color: var(--fontcolor);
+}
+.ourteam-inner{
+    display: flex;
+    flex-wrap: wrap;
+   
+    text-align: center;
+    gap: 15px;
+}
+.ourteam-inner .section-box{
+    flex: 1 1 250px;
+    /* width: calc(100% / 4 - 20px); */
+}
+.section-box img{
+    width: 40%;
+    border-radius: 50%;
+}
+.section-box h3{
+    padding: 1rem 0;
+    font-size: 2rem;
+}
+/* .team-social-links i{
+    color: var(--fontcolor);
+    font-size: 2rem;
+    padding:1rem 0;
+} */
+
+.main-footer{
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* justify-content: space-between; */
+    background: #222;
+    padding: 2rem 9%;
+}
+
+
+
+
+@media (max-width:768px) {
+    html{
+        font-size: 50%;
+    }
+    header #menu_bars{
+        display: initial;
+    }
+
+    header .navbar{
+        position: absolute;
+        top: 100%;
+        left: 100%;
+        right: 0;
+        background: var(--backgroundcolor);
+        height: 100vh;
+        text-align: center;
+
+    }
+    header .navbar a{
+        display: block;
+        background: white;
+        margin-top: 1rem;
+        padding: 2rem;
+        width: 90%;
+        border-radius: 10px;
+    }
+    .container .main-text{
+        width: 50%;
+        padding: 0 ;
+    }
+   .myimages img{
+       width: 100%;
+   }
+
+}

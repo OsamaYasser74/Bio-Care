@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Diagnostic system</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/project.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/all.min.css') }}">
+</head>
+
+<body>
+    <header class="header">
+        <a href="#" id="logo"><img src="{{ url_for('static', filename = 'image/logo.png') }}" alt="">
+            <span>Bio</span>Care</a>
+
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#about">about</a>
+            <a href="#diseases">Diseases</a>
+            <a href="#team">Our Team</a>
+        </nav>
+        <a href="#" id="menu_bars" class="fas fa-bars"></a>
+    </header>
+
+
+    <div class="container" id="home">
+        <img src="{{ url_for('static', filename = 'image/background.jpg') }}" alt="">
+        <div class="main-text">
+            <h3>welcome to BioCare</h3>
+            <h2>We protect your health because the most valuable thing is your health</h2>
+        </div>
+    </div>
+
+    <section class="about-us" id="about">
+        <div class="about">
+            <img src="{{ url_for('static', filename = 'image/about.jpg') }}" class="pic">
+            <div class="text">
+                <h2>About Us</h2>
+                <h4>medical diagnosis system using artificial intelligence techniques.</h4>
+                <p>The project aims to help the country to innovate and advance in development and scientific research,
+                    so that it helps scientists to study and develop treatments that may save the citizen's life and
+                    promote it for the better. Therefore, we used An smart system capable of diagnosing diseases,
+                    whether COVID-19, heart dusease, diabetes disease, or others. A system established by an artificial
+                    intelligence system and a mechanical system with communication between both systems using web
+                    applications</p>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="disease-section" id="diseases">
+        <h2 id="disease">Diseases</h2>
+        <div class="inner-disease-section">
+            <div class="disease-box" onclick="location.href='heart';" style="cursor: pointer;">
+                <i class="fa-solid fa-heart-pulse"></i>
+                <h2>heart disease</h2>
+                <p>This is called congenital heart disease. If people get heart disease later, it is called acquired
+                    heart disease. Most heart disease is acquired.</p>
+            </div>
+            <div class="disease-box" onclick="location.href='hepatitisC';" style="cursor: pointer;">
+                <i class="fa-solid fa-virus-covid"></i>
+                <h2>hepatitisC</h2>
+                <p>Hepatitis C is a liver infection caused by the hepatitis C virus (HCV). Hepatitis C is spread through contact with blood from an infected person</p>
+            </div>
+            <div class="disease-box" onclick="location.href='diabetes';" style="cursor: pointer;">
+                <i class="fa-solid fa-syringe"></i>
+                <h2>diabetes disease</h2>
+                <p>Diabetes is a chronic (long-lasting) health condition that affects how your body turns food into
+                    energy.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="ourteam-section" id="team">
+        <h2><span>our</span> team</h2>
+        <div class="ourteam-inner">
+            <div class="section-box">
+                <img src="../static/image/A.abelfattah.jpeg" alt="">
+                <h3>eng.ahmed abdelafattah</h3>
+                <p>AI engineer</p>
+                <!-- <div class="team-social-links">
+                        <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                    </div> -->
+            </div>
+            <div class="section-box">
+                <img src="../static/image/A.aboelasaad.jpeg" alt="">
+                <h3>Eng.ahmed aboelasaad</h3>
+                <p>front-end engineer</p>
+                <!-- <div class="team-social-links">
+                        <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                    </div> -->
+            </div>
+            <div class="section-box">
+                <img src="../static/image/A.aboelfath.jpeg" alt="">
+                <h3>eng.ahmed aboelfath</h3>
+                <p>back-end engineer</p>
+                <!-- <div class="team-social-links">
+                        <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                    </div> -->
+            </div>
+            <div class="section-box">
+                <img src="../static/image/A.elsayed.jpeg" alt="">
+                <h3>eng.ahmed elsayed</h3>
+                <p>back-end engineer</p>
+                <!-- <div class="team-social-links">
+                        <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                    </div> -->
+            </div>
+            <div class="section-box">
+                <img src="../static/image/dawoud.jpeg" alt="">
+                <h3>eng.mahmoud dawoud</h3>
+                <p>front-end engineer</p>
+                <!-- <div class="team-social-links">
+                        <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                    </div> -->
+            </div>
+            <div class="section-box">
+                <img src="../static/image/osama.jpeg" alt="">
+                <h3>eng.osama yasser</h3>
+                <p>back-end engineer</p>
+                <!-- <div class="team-social-links">
+                        <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                    </div> -->
+            </div>
+            <div class="section-box">
+                <img src="../static/image/rewan.jpeg" alt="">
+                <h3>eng.rewan abdelsallam</h3>
+                <p>front-end engineer</p>
+                <!-- <div class="team-social-links">
+                        <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                    </div> -->
+            </div>
+            <div class="section-box">
+                <img src="../static/image/tasneem.jpeg" alt="">
+                <h3>eng.tasneem emad</h3>
+                <p>front-end engineer</p>
+                <!-- <div class="team-social-links">
+                        <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                    </div> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="main-footer"></div>
+    <script src="../static/js/script.js"></script>
+</body>
+
+</html>

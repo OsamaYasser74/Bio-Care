@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart Data Analysis</title>
+    <link rel="stylesheet" href="../static/css/inputs.css">
+</head>
+<body>
+    <div id="bg"></div>
+    <div class="container">
+        <div class="title"> Analysis Heart Data</div>
+        <div class="content">
+            <form action="{{ url_for('heart') }}" method="post" id="form1">
+                <div class="data-details">
+                    <div class="input-field">
+                        <span class="details">Age</span>
+                        <input type="number" name="Age"  required>
+                    </div>
+
+                    <div class="input-field">
+                        <span class="details">Sex</span>
+                        <input type="number" name="Sex" required>
+                    </div>
+
+                    <div class="input-field">
+                        <span class="details">Cp</span>
+                        <input type="number" name="Cp" step="any"  required>
+                    </div>
+
+                    <div class="input-field">
+                        <span class="details">Trestbps</span>
+                        <input type="number" name="Trestbps" required>
+                    </div>
+                    <div class="input-field">
+                        <span class="details">Chol</span>
+                        <input type="number" name="Chol" required>
+                    </div>
+                    <div class="input-field">
+                        <span class="details">Fbs</span>
+                        <input type="number" name="Fbs" required>
+                    </div>
+                    <div class="input-field">
+                        <span class="details">Restecg</span>
+                        <input type="number" name="Restecg" required>
+                    </div>
+                    <div class="input-field">
+                        <span class="details">Thalach</span>
+                        <input type="number" name="Thalach" required>
+                    </div>
+                    <div class="input-field">
+                        <span class="details">Exang</span>
+                        <input type="number" name="Exang" required>
+                    </div>
+                    <div class="input-field">
+                        <span class="details">Oldpeak</span>
+                        <input type="number" name="Oldpeak" step="any" required>
+                    </div>
+                    <div class="input-field">
+                        <span class="details">slope</span>
+                        <input type="number" name="slope" required>
+                    </div>
+                    <div class="input-field">
+                        <span class="details">Ca</span>
+                        <input type="number" name="Ca" required>
+                    </div>
+                    <div class="input-field">
+                        <span class="details">Thal</span>
+                        <input type="number" name="Thal" required>
+                    </div>
+                </div>
+                <div class="button">
+                    <input type="submit" value="predict" >
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
